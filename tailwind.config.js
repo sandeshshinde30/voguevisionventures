@@ -11,7 +11,7 @@ export default {
         'dark-green': '#235347',
         'light-green' : '#8AB69B',
         'lighter-green' : "#DAF1DE",
-        'background-green' : "#f2fcf4"
+        'background-green' : "#f7fcf8"
       },
     },
   },
