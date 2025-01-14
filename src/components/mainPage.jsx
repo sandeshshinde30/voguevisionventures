@@ -6,8 +6,16 @@ import Opex from "./opex";
 import Sales from "./sales";
 import StoreROI from "./storeROI";
 import Footer from "./footer";
+import { Navigate, useNavigate } from "react-router-dom";
+
 
 export default function MainPage(){
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+       navigate("/contactus")
+      };
+
     return(
     <>
         <div className="bg-background-green h-auto">
@@ -30,6 +38,12 @@ export default function MainPage(){
            <div className="mt-32">
            {/* <Footer/> */}
            </div>
+           <button
+      onClick={handleClick}
+      className="fixed bottom-5 right-5 font-bold bg-darker-green text-white p-4 rounded-full shadow-lg hover:bg-dark-green"
+    >
+      Contact Us
+    </button>
         </div>
     </>
     )
