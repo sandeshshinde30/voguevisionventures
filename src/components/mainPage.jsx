@@ -13,7 +13,7 @@ export default function MainPage() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/contactus");
+    navigate("/contact-us");
   };
 
   return (
