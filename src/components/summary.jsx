@@ -4,7 +4,7 @@ import "../css/header.css";
 export default function StoreROI() {
     const summaryData = [
         { label: "Fix Cost", value: "2,99,997" },
-        { label: "Capital Cost", value: "8,25,000" },
+        { label: "Capital Cost", value: "8,00,000" },
         { label: "Inventory", value: "13,00,000" },
         { label: "Profit Commission", value: "67%" },
         { label: "ROI on Investment", value: "33%" },
