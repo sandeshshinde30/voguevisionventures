@@ -4,44 +4,105 @@ import "../css/header.css";
 export default function Capex() {
   // Table data as an array of objects
   const capexData = [
-    { details: "Software Licence & Franchise Fee", total: "2,36,000" },
-    { details: "Interiors (Furniture, tiles, A/C, Displays, Storage, Music System)", total: "10,00,000" },
-    { details: "Branding (Signage, VM, other branding)", total: "2,70,000" },
-    { details: "LCD Screen, Tablet, Laptop", total: "2,50,000" },
-    { details: "Staff Training Expense", total: "2,00,000" },
-    { details: "Opthal Equipment (Eye testing machine, other tools etc)", total: "5,00,000" },
+    {
+      details: (
+        <span>
+          <strong>Interior:</strong> (MS Rack & Furniture, Mat & Curtain, Storage, Pain, Glass)
+        </span>
+      ),
+      MRP: "6,00,000",
+      offerPrice: "3,50,000",
+    },
+    {
+      details: (
+        <span>
+          <strong>Branding:</strong> (Signage, Fabric Board, Other Brandings, Displays)
+        </span>
+      ),
+      MRP: "2,75,000",
+      offerPrice: "1,50,000",
+    },
+    {
+      details: (
+        <span>
+          <strong>Electronic:</strong> (Customized Light Structure, Fan, AC, Vaccume Cleaner, LED Screen, Tablet, Computer, Music System, Inverter etc.)
+        </span>
+      ),
+      MRP: "2,50,000",
+      offerPrice: "1,75,000",
+    },
+    {
+      details: (
+        <span>
+          <strong>Customization Equipment:</strong> (Heat Press Machine, Mannequins-4, Hangers-200 & Other Equipments)
+        </span>
+      ),
+      MRP: "75,000",
+      offerPrice: "50,000",
+    },
+    {
+      details: (
+        <span>
+          <strong>Security:</strong> (CCTV, Anti-Theft Alarm & Other Tools etc.)
+        </span>
+      ),
+      MRP: "75,000",
+      offerPrice: "50,000",
+    },
+    {
+      details: (
+        <span>
+          <strong>Software:</strong> (Billing Software, Antivirus, Server etc.)
+        </span>
+      ),
+      MRP: "1,25,000",
+      offerPrice: "50,000",
+    },
   ];
 
-  // Calculate total Capex
-  const totalCapex = capexData.reduce(
-    (acc, item) => acc + parseInt(item.total.replace(/,/g, "")),
-    0
-  ).toLocaleString("en-IN");
+  const totalMRP = capexData
+    .reduce((acc, item) => acc + parseInt(item.MRP.replace(/,/g, "")), 0)
+    .toLocaleString("en-IN");
+
+  const totalOfferPrice = capexData
+    .reduce((acc, item) => acc + parseInt(item.offerPrice.replace(/,/g, "")), 0)
+    .toLocaleString("en-IN");
 
   return (
     <>
       <div>
         <div>
-          <h1 className="rowdies2 lg:text-2xl text-xl text-center">CAPEX</h1>
+          <h1 className="rowdies2 lg:text-2xl text-xl text-center">CAPITAL COST</h1>
         </div>
         <div className="flex w-full h-full items-center justify-center">
           <table className="mt-8 lg:w-3/5 w-[85%] bg-white shadow-xl tracking-wider">
             <thead className="bg-lighter-green text-md">
               <tr>
                 <th className="border border-gray-300 px-4 py-3">Details</th>
-                <th className="border border-gray-300 px-4 py-3">Total</th>
+                <th className="border border-gray-300 px-4 py-3">Actual Amount</th>
+                <th className="border border-gray-300 px-4 text-dark-green py-3">
+                  Company Offered Amount
+                </th>
               </tr>
             </thead>
             <tbody className="text-sm">
               {capexData.map((item, index) => (
                 <tr key={index}>
                   <td className="p-2 border border-gray-300 px-4 py-3">{item.details}</td>
-                  <td className="p-2 border border-gray-300 px-4 py-3">{item.total}</td>
+                  <td className="p-2 border text-red-800 border-gray-300 px-4 py-3">{item.MRP}</td>
+                  <td className="p-2 border text-green-800 font-medium border-gray-300 px-4 py-3">
+                    {item.offerPrice}
+                  </td>
                 </tr>
               ))}
               <tr>
-                <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total Capex</td>
-                <td className="p-2 font-bold border border-gray-300 px-4 py-3">{totalCapex}</td>
+                <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total</td>
+                <td className="p-2 font-bold border border-gray-300 px-4 text-red-900 py-3">
+                  {totalMRP}
+                </td>
+                <td className="p-2 border border-gray-300 text-dark-green font-bold px-4 py-3">
+                  {totalOfferPrice}
+                </td>
               </tr>
             </tbody>
           </table>
