@@ -53,7 +53,7 @@ export default function Opex() {
               ))}
 
               <tr className="bg-green-50">
-              <td className="p-2 font-bold border border-gray-300 px-4 py-3">operating cost</td>
+              <td className="p-2 font-bold border border-gray-300 px-4 py-3">Operating cost (Active)</td>
 
               <td className="p-2 border text-center font-extrabold text-dark-green border-gray-300 px-4 py-3">{firstTotal}</td>
                 
@@ -69,7 +69,7 @@ export default function Opex() {
             
 
               <tr className="bg-green-50">
-                <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total Operating Expenses</td>
+                <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total Operating Expenses (Passive)</td>
                 <td className="p-2 font-extrabold text-center border text-darker-green border-gray-300 px-4 py-3">{secondTotal}</td>
               </tr>
             </tbody>
