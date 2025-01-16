@@ -38,14 +38,14 @@ export default function FixCost(){
                 <tr key={index}>
                   <td className="p-2 border border-gray-300 px-4 py-3">{item.details}</td>
                   <td className="p-2 border text-red-800 border-gray-300 px-4 py-3">{item.MRP}</td>
-                  <td className="p-2 border text-green-800 font-medium px-4 py-3">{item.offerPrice}</td>
+                  <td className="p-2 border text-green-800 font-bold px-4 py-3">{item.offerPrice}</td>
 
                 </tr>
               ))}
-              <tr>
+              <tr className="bg-green-50">
                 <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total</td>
-                <td className="p-2 font-bold border border-gray-300 px-4 text-red-900 py-3">{totalMRP}</td>
-                <td className="p-2 border border-gray-300 text-dark-green font-bold px-4 py-3">{totalOfferPrice}</td>
+                <td className="p-2 font-semibold border border-gray-300 px-4 text-red-900 py-3">{totalMRP}</td>
+                <td className="p-2 border border-gray-300 text-dark-green font-extrabold px-4 py-3">{totalOfferPrice}</td>
 
               </tr>
             </tbody>

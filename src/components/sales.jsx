@@ -83,8 +83,8 @@ export default function Sales() {
         </div>
         <div className="flex w-full h-full items-center justify-center">
           {/* Add horizontal scrolling */}
-          <div className="overflow-x-auto w-[85%] lg:w-3/5">
-            <table className="mt-8 w-full bg-white shadow-xl tracking-wider">
+          <div className="overflow-x-auto w-[85%] shadow-xl lg:w-3/5">
+            <table className="mt-8 w-full  bg-white  tracking-wider">
               <thead className="bg-lighter-green text-md">
                 <tr>
                   <th className="border border-gray-300 px-4 py-3">Details</th>
@@ -106,7 +106,7 @@ export default function Sales() {
                     <td className="p-2 border border-gray-300 px-4 py-3">{item.saleValue}</td>
                   </tr>
                 ))}
-                <tr>
+                <tr className="bg-green-50">
                   <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total</td>
                   <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>
                   <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>

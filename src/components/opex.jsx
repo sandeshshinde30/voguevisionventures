@@ -46,7 +46,7 @@ export default function Opex() {
             {opexData.map((item, index) => (
                 <tr key={index}>
                   <td className="p-2 border border-gray-300 px-4 py-3">{item.operatingExpenses}</td>
-                  <td className="p-2 border text-green-800 font-medium border-gray-300 px-4 py-3">
+                  <td className="p-2 border text-green-800 font-bold border-gray-300 px-4 py-3">
                     {item.price}
                   </td>
                 </tr>
@@ -55,22 +55,22 @@ export default function Opex() {
               <tr>
               <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>
 
-              <td className="p-2 border font-bold text-dark-green border-gray-300 px-4 py-3">{firstTotal}</td>
+              <td className="p-2 border font-extrabold text-dark-green border-gray-300 px-4 py-3">{firstTotal}</td>
                 
               </tr>
 
             
                 <tr>
                   <td className="p-2 border border-gray-300 px-4 py-3">{newObj.operatingExpenses}</td>
-                  <td className="p-2 border text-green-800 font-medium border-gray-300 px-4 py-3">
+                  <td className="p-2 border text-green-800 font-bold border-gray-300 px-4 py-3">
                     {newObj.price}
                   </td>
                 </tr>
             
 
-              <tr>
+              <tr className="bg-green-50">
                 <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total Operating Expenses</td>
-                <td className="p-2 font-bold border text-darker-green border-gray-300 px-4 py-3">{secondTotal}</td>
+                <td className="p-2 font-extrabold border text-darker-green border-gray-300 px-4 py-3">{secondTotal}</td>
               </tr>
             </tbody>
           </table>
