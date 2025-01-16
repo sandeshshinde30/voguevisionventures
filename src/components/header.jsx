@@ -2,11 +2,13 @@ import React from "react";
 import "../css/header.css"; // Adjust import path
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+ import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebook, FaTwitter, FaYoutube, FaInstagram, FaUser, FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Header() {
   return (
     <>
-      <div className="bg-white border-b-[1px] border-[#BC965C] shadow-md">
+      <div className="bg-white lg:p-0 p-2 border-b-[1px] border-[#BC965C] shadow-md">
         <div className="flex items-center lg:justify-between lg:mx-24 mx-5">
          <div className="flex items-center ">
          <div >
@@ -26,9 +28,19 @@ export default function Header() {
           <div className="ml-[5px]">
              <div className="flex items-center tracking-wide ">
                 <FaPhoneAlt size={15} className="text-dark-green"/>
-                <h2 className=" ml-2 text-[14px]">9119558855</h2>
+                <h2 className=" ml-2 text-[14px]">911 955 88 55</h2>
              </div>
           </div>
+         </div>
+         <div>
+         <div className="hidden lg:block">
+                <div className='flex space-x-4'>
+                       <a href="" target=''> <FaFacebook className="icon-outline text-dark-green hover:text-green-700 cursor-pointer" size={22} /></a>
+                        <a href="" target=''><FaTwitter className="icon-outline text-dark-green hover:text-green-700 cursor-pointer" size={24} /></a>
+                        <a href="https://youtube.com/@vogueprism2024?si=MtD5PJpIyjyBQkFE" target='_blank'><FaYoutube className="icon-outline text-dark-green hover:text-green-700 cursor-pointer" size={24} /></a>
+                        <a href="https://www.instagram.com/vogue_prism?igsh=bXhkdGJiOHgwb3By" target='_blank'><AiFillInstagram className="icon-outline text-dark-green hover:text-green-700 cursor-pointer" size={26} /></a>
+                    </div>
+                </div>
          </div>
         </div>
       </div>

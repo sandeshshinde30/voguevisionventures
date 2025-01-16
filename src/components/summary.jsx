@@ -29,7 +29,7 @@ export default function StoreROI() {
               {summaryData.map((item, index) => (
                 <tr key={index}>
                   <td className="p-2 border border-gray-300 px-4 py-3 w-1/2">{item.label}</td>
-                  <td className="p-2 border text-green-800 font-bold border-gray-300 px-4 py-3 w-1/2">{item.value}</td>
+                  <td className="p-2 border text-green-800 font-bold text-center border-gray-300 px-4 py-3 w-1/2">{item.value}</td>
                 </tr>
               ))}
               

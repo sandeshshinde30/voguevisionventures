@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./header";
 import "../css/header.css";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 import { Navigate, useNavigate } from "react-router-dom";
 
 export default function ContactUs() {
@@ -31,6 +33,22 @@ export default function ContactUs() {
           <h1 className="rowdies font-thin text-center text-2xl mt-16 text-dark-green">
             CONTACT US
           </h1>
+          
+          <div className="flex flex-col lg:hidden mt-5 justify-center items-center  text-center">
+        <div >
+             <div  className="flex items-center tracking-wide px-[5px]">
+                <MdEmail size={20} className="text-dark-green"/>
+                <h2 className=" ml-1 text-[14px]">director@voguevisionventures.com</h2>
+             </div>
+          </div>
+          <div className="ml-[5px]">
+             <div className="flex items-center tracking-wide ">
+                <FaPhoneAlt size={15} className="text-dark-green"/>
+                <h2 className=" ml-2 text-[14px]">911 955 88 55</h2>
+             </div>
+          </div>
+        </div>
+          
           <div className="flex w-full mt-2 justify-center">
             <form className="lg:w-2/4 w-[80%] lg:mt-2 mt-10 text-sm lg:text-lg bg p-4 shadow-2xl bg-white mb-8">
               <div className="mb-4">

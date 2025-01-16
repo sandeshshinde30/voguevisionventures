@@ -28,14 +28,6 @@ export default function Sales() {
       saleValue: "0",
     },
     {
-      details: "Sportwear",
-      avgSalesQty: 0,
-      ASP: 0,
-      retailerMargin: "0%",
-      commissionOnSale: "0",
-      saleValue: "0",
-    },
-    {
       details: "Formal Pants",
       avgSalesQty: 0,
       ASP: 0,
@@ -53,6 +45,14 @@ export default function Sales() {
     },
     {
       details: "Sport Jackets",
+      avgSalesQty: 0,
+      ASP: 0,
+      retailerMargin: "0%",
+      commissionOnSale: "0",
+      saleValue: "0",
+    },
+    {
+      details: "Sportwear",
       avgSalesQty: 0,
       ASP: 0,
       retailerMargin: "0%",
@@ -91,7 +91,7 @@ export default function Sales() {
                   <th className="border border-gray-300 px-4 py-3">Avg Sales Qty</th>
                   <th className="border border-gray-300 px-4 py-3">ASP</th>
                   <th className="border border-gray-300 px-4 py-3">Retailer~Margin </th>
-                  <th className="border border-gray-300 px-4 py-3">Commission on sale</th>
+                  <th className="border border-gray-300 px-4 py-3">Commission on profit</th>
                   <th className="border border-gray-300 px-4 py-3">Sale value</th>
                 </tr>
               </thead>
