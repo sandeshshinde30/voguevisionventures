@@ -7,6 +7,7 @@ import Sales from "./sales";
 import StoreROI from "./storeROI";
 import Footer from "./footer";
 import { Navigate, useNavigate } from "react-router-dom";
+import FixCost from "./fixCost";
 
 
 export default function MainPage(){
@@ -21,10 +22,11 @@ export default function MainPage(){
         <div className="bg-background-green h-auto">
            <Header/>
            <div>
-            <h1 className="rowdies2 lg:text-[25px] text-[18px] tracking-normal text-center mt-10 text-dark-green" >VOGUE VISION VENTURES PLAN</h1>
+            <h1 className="rowdies2 lg:text-[25px] text-[18px] tracking-normal text-center mt-10 text-dark-green" >VOGUE VISION VENTURES FRANCHISE PLAN</h1>
            </div>
            <div className="mt-20">
-           <Capex/>
+           {/* <Capex/> */}
+           <FixCost/>
            </div>
            <div className="mt-32">
            <Opex/>

@@ -20,13 +20,13 @@ export default function Header() {
          <div>
              <div className="flex items-center tracking-wide border-r-2 border-gray-400 px-[5px]">
                 <MdEmail size={20} className="text-dark-green"/>
-                <h2 className=" ml-1 text-[14px]">director@vogueprism.com</h2>
+                <h2 className=" ml-1 text-[14px]">director@voguevisionventures.com</h2>
              </div>
           </div>
           <div className="ml-[5px]">
              <div className="flex items-center tracking-wide ">
                 <FaPhoneAlt size={15} className="text-dark-green"/>
-                <h2 className=" ml-2 text-[14px]">9999999999</h2>
+                <h2 className=" ml-2 text-[14px]">9119558855</h2>
              </div>
           </div>
          </div>

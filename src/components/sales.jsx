@@ -58,7 +58,7 @@ export default function Sales() {
                   <th className="border border-gray-300 px-4 py-3">Details</th>
                   <th className="border border-gray-300 px-4 py-3">Avg Sales Qty</th>
                   <th className="border border-gray-300 px-4 py-3">ASP</th>
-                  <th className="border border-gray-300 px-4 py-3">Retailer Margin ~</th>
+                  <th className="border border-gray-300 px-4 py-3">Retailer~Margin </th>
                   <th className="border border-gray-300 px-4 py-3">Commission on sale</th>
                   <th className="border border-gray-300 px-4 py-3">Sale value</th>
                 </tr>
