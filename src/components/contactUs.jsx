@@ -28,7 +28,7 @@ export default function ContactUs() {
 
         {/* Content Below Header */}
         <div className="pt-20"> {/* Adjust padding based on header height */}
-          <h1 className="rowdies font-thin text-center text-2xl mt-5 text-dark-green">
+          <h1 className="rowdies font-thin text-center text-2xl mt-16 text-dark-green">
             CONTACT US
           </h1>
           <div className="flex w-full mt-2 justify-center">
