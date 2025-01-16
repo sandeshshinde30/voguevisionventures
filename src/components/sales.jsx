@@ -5,59 +5,59 @@ export default function Sales() {
   const salesData = [
     {
       details: "Shirts",
-      avgSalesQty: 0,
-      ASP: 0,
-      retailerMargin: "0%",
-      commissionOnSale: "0",
-      saleValue: "0",
+      avgSalesQty: "3,999",
+      ASP: "499",
+      retailerMargin: "67%",
+      commissionOnSale: "3,35,000",
+      saleValue: "19,95,500",
     },
     {
       details: "T-Shirt",
-      avgSalesQty: 0,
-      ASP: 0,
-      retailerMargin: "0%",
-      commissionOnSale: "0",
-      saleValue: "0",
+      avgSalesQty: "3,000",
+      ASP: "399",
+      retailerMargin: "67%",
+      commissionOnSale: "2,00,000",
+      saleValue: "11,97,000",
     },
     {
       details: "Jeans",
-      avgSalesQty: 0,
-      ASP: 0,
-      retailerMargin: "0%",
-      commissionOnSale: "0",
-      saleValue: "0",
+      avgSalesQty: "1,000",
+      ASP: "999",
+      retailerMargin: "67%",
+      commissionOnSale: "1,65,000",
+      saleValue: "9,99,000",
     },
     {
       details: "Formal Pants",
-      avgSalesQty: 0,
-      ASP: 0,
-      retailerMargin: "0%",
-      commissionOnSale: "0",
-      saleValue: "0",
+      avgSalesQty: "1,150",
+      ASP: "699",
+      retailerMargin: "67%",
+      commissionOnSale: "1,35,000",
+      saleValue: "8,03,850",
     },
     {
       details: "Kurtis",
-      avgSalesQty: 0,
-      ASP: 0,
-      retailerMargin: "0%",
-      commissionOnSale: "0",
-      saleValue: "0",
+      avgSalesQty: "850",
+      ASP: "599",
+      retailerMargin: "67%",
+      commissionOnSale: "85,000",
+      saleValue: "5,09,150",
     },
     {
       details: "Sport Jackets",
-      avgSalesQty: 0,
-      ASP: 0,
-      retailerMargin: "0%",
-      commissionOnSale: "0",
-      saleValue: "0",
+      avgSalesQty: "500",
+      ASP: "599",
+      retailerMargin: "67%",
+      commissionOnSale: "50,000",
+      saleValue: "2,99,500",
     },
     {
       details: "Sportwear",
-      avgSalesQty: 0,
-      ASP: 0,
-      retailerMargin: "0%",
-      commissionOnSale: "0",
-      saleValue: "0",
+      avgSalesQty: "490",
+      ASP: "399",
+      retailerMargin: "67%",
+      commissionOnSale: "30,000",
+      saleValue: "1,96,000",
     },
   ];
 
@@ -98,12 +98,12 @@ export default function Sales() {
               <tbody className="text-sm">
                 {salesData.map((item, index) => (
                   <tr key={index}>
-                    <td className="p-2 border border-gray-300 px-4 py-3">{item.details}</td>
-                    <td className="p-2 border border-gray-300 px-4 py-3">{item.avgSalesQty}</td>
-                    <td className="p-2 border border-gray-300 px-4 py-3">{item.ASP}</td>
-                    <td className="p-2 border border-gray-300 px-4 py-3">{item.retailerMargin}</td>
-                    <td className="p-2 border border-gray-300 px-4 py-3">{item.commissionOnSale}</td>
-                    <td className="p-2 border border-gray-300 px-4 py-3">{item.saleValue}</td>
+                    <td className="p-2 text-center border border-gray-300 px-4 py-3">{item.details}</td>
+                    <td className="p-2 text-center border border-gray-300 px-4 py-3">{item.avgSalesQty}</td>
+                    <td className="p-2 text-center border border-gray-300 px-4 py-3">{item.ASP}</td>
+                    <td className="p-2 text-center border border-gray-300 px-4 py-3">{item.retailerMargin}</td>
+                    <td className="p-2 text-center border border-gray-300 px-4 py-3">{item.commissionOnSale}</td>
+                    <td className="p-2 text-center border border-gray-300 px-4 py-3">{item.saleValue}</td>
                   </tr>
                 ))}
                 <tr className="bg-green-50">
@@ -111,8 +111,8 @@ export default function Sales() {
                   <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>
                   <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>
                   <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>
-                  <td className="p-2 font-bold border border-gray-300 px-4 py-3">{totalCommissionOnSale}</td>
-                  <td className="p-2 font-bold border border-gray-300 px-4 py-3">{totalSaleValue}</td>
+                  <td className="p-2 text-center font-bold border border-gray-300 px-4 py-3">{totalCommissionOnSale}</td>
+                  <td className="p-2 text-center font-bold border border-gray-300 px-4 py-3">{totalSaleValue}</td>
                 </tr>
               </tbody>
             </table>
