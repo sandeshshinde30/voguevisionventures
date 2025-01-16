@@ -53,7 +53,7 @@ export default function Opex() {
               ))}
 
               <tr>
-              <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>
+              <td className="p-2 font-bold border border-gray-300 px-4 py-3">operating cost</td>
 
               <td className="p-2 border font-extrabold text-dark-green border-gray-300 px-4 py-3">{firstTotal}</td>
                 

@@ -7,11 +7,11 @@ export default function Capex() {
     {
       details: (
         <span>
-          <strong>Interior:</strong> (MS Rack & Furniture, Mat & Curtain, Storage, Pain, Glass)
+          <strong>Interior:</strong> (MS Rack & Furniture, Mat & Curtain, Storage, Paint, Glass)
         </span>
       ),
       MRP: "6,00,000",
-      offerPrice: "3,50,000",
+      offerPrice: "3,25,000",
     },
     {
       details: (

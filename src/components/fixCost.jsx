@@ -4,7 +4,7 @@ export default function FixCost(){
 
     const fixedCostData = [
         { details: "Software Licence & Franchise Fee", MRP: "2,49,999", offerPrice : "99,999" },
-        { details: "Sales Commision on Security Deposite", MRP: "1,99,998" , offerPrice : "1,99,998" },
+        { details: "Company profit commission security deposit", MRP: "3,96,000" , offerPrice : "1,99,998" },
       ];
     
       const totalMRP = fixedCostData.reduce(
