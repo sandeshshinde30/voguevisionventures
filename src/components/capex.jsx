@@ -7,7 +7,7 @@ export default function Capex() {
     {
       details: (
         <span>
-          <strong>Interior:</strong> (MS Rack & Furniture, Mat & Curtain, Storage, Paint, Glass)
+          <strong>Interior:</strong> (MS Rack & Furniture, Mat & Curtain, Storage, Paint, Glass Work etc.)
         </span>
       ),
       MRP: "6,00,000",
@@ -16,7 +16,7 @@ export default function Capex() {
     {
       details: (
         <span>
-          <strong>Branding:</strong> (Signage, Fabric Board, Other Brandings, Displays)
+          <strong>Branding:</strong> (Signage, Fabric Board, Other Brandings, Displays etc.)
         </span>
       ),
       MRP: "2,75,000",
@@ -34,7 +34,7 @@ export default function Capex() {
     {
       details: (
         <span>
-          <strong>Customization Equipment:</strong> (Heat Press Machine, Mannequins-4, Hangers-200 & Other Equipments)
+          <strong>Customization Equipment:</strong> (Heat Press Machine, Mannequins-4, Hangers-200 & Other Equipments etc.)
         </span>
       ),
       MRP: "75,000",
