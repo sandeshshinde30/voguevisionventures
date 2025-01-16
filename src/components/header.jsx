@@ -37,7 +37,7 @@ export default function Header() {
          <div className="hidden lg:block">
                 <div className='flex space-x-4'>
                        <a href="https://www.facebook.com/profile.php?id=61556407060403" target='_blank'> <FaFacebook className="icon-outline text-dark-green hover:text-green-700 cursor-pointer" size={22} /></a>
-                        <a href="" target=''><IoLogoWhatsapp className="icon-outline text-dark-green hover:text-green-700 cursor-pointer" size={24} /></a>
+                        <a href="https://chat.whatsapp.com/L8IniHeuD7p8ZdC50EM59V" target='_blank'><IoLogoWhatsapp className="icon-outline text-dark-green hover:text-green-700 cursor-pointer" size={24} /></a>
                         <a href="https://youtube.com/@vogueprism2024?si=MtD5PJpIyjyBQkFE" target='_blank'><FaYoutube className="icon-outline text-dark-green hover:text-green-700 cursor-pointer" size={24} /></a>
                         <a href="https://www.instagram.com/vogue_prism?igsh=bXhkdGJiOHgwb3By" target='_blank'><AiFillInstagram className="icon-outline text-dark-green hover:text-green-700 cursor-pointer" size={26} /></a>
                     </div>
