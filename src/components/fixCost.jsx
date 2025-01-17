@@ -46,7 +46,6 @@ export default function FixCost(){
                 <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total</td>
                 <td className="p-2 text-center font-semibold border border-gray-300 px-4 text-red-900 py-3">{totalMRP}</td>
                 <td className="p-2 text-center border border-gray-300 text-dark-green font-extrabold px-4 py-3">{totalOfferPrice}</td>
-
               </tr>
             </tbody>
           </table>
