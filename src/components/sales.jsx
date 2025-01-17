@@ -107,10 +107,9 @@ export default function Sales() {
                   </tr>
                 ))}
                 <tr className="bg-green-50">
+                  <td colSpan={3} className="p-2 font-bold border border-gray-300 px-4 py-3">* All values here are representation of approximate values</td>
+                 
                   <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total</td>
-                  <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>
-                  <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>
-                  <td className="p-2 font-bold border border-gray-300 px-4 py-3"></td>
                   <td className="p-2 text-center font-bold border border-gray-300 px-4 py-3">{totalCommissionOnSale}</td>
                   <td className="p-2 text-center font-bold border border-gray-300 px-4 py-3">{totalSaleValue}</td>
                 </tr>

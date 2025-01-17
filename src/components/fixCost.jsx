@@ -3,8 +3,8 @@ import React from "react";
 export default function FixCost(){
 
     const fixedCostData = [
-        { details: "Software Licence & Franchise Fee", MRP: "2,49,999", offerPrice : "99,999" },
-        { details: "Company profit commission security deposit", MRP: "3,96,000" , offerPrice : "1,99,998" },
+        { details: "Software Licence & Franchise Fee", MRP: "2,49,999", offerPrice : "99,999" , limitedOffer : "(Limited time offer)" },
+        { details: "Company profit commission security deposit", MRP: "3,96,000" , offerPrice : "1,99,998" , limitedOffer : ""},
       ];
     
       const totalMRP = fixedCostData.reduce(
@@ -38,7 +38,7 @@ export default function FixCost(){
                 <tr key={index}>
                   <td className="p-2 border border-gray-300 px-4 py-3">{item.details}</td>
                   <td className="p-2 border text-center text-red-800 border-gray-300 px-4 py-3">{item.MRP}</td>
-                  <td className="p-2 border text-center text-green-800 font-bold px-4 py-3">{item.offerPrice}</td>
+                  <td className="p-2 border text-center text-green-800 font-bold px-4 py-3">{item.offerPrice} <br /> {item.limitedOffer}</td>
 
                 </tr>
               ))}
