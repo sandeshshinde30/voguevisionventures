@@ -107,43 +107,43 @@ export default function ContactUs() {
 
     closePopUp();
 
-    // emailjs
-    //   .send(serviceId, templateId, templateParams, userId)
-    //   .then((response) => {
-    //     console.log("SUCCESS!", response.status, response.text);
-    //     setmailSentMsg("Email successfully sent..");
-    //     setemailSentStatusColor("red-700");
-    //     setEmailIsPopUpVisible(true);
-    //     closePopUp(); // Close pop-up after successful submission
-    //   })
-    //   .catch((error) => {
-    //     console.error("FAILED...", error);
-    //     setmailSentMsg("Email failed to send..");
-    //     setemailSentStatusColor("dark-green");
-    //     setEmailIsPopUpVisible(true);
-    //     closePopUp();
-    //   })
-    //   .finally(() => {
-    //     // Stop the loader after the process is complete
-    //     setLoading(false);
-    //   });
-
-    const timer = setTimeout(() => {
-      const success = 1;
-
-      if(success == 0){
-        setmailSentMsg("Email failed to sent..");
-        setemailSentStatusColor("dark-green")
-        setEmailIsPopUpVisible(true);
-      }
-      else{
+    emailjs
+      .send(serviceId, templateId, templateParams, userId)
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
         setmailSentMsg("Email successfully sent..");
-        setemailSentStatusColor("red-700")
+        setemailSentStatusColor("red-700");
         setEmailIsPopUpVisible(true);
-      }
-      setLoading(false);
+        closePopUp(); // Close pop-up after successful submission
+      })
+      .catch((error) => {
+        console.error("FAILED...", error);
+        setmailSentMsg("Email failed to send..");
+        setemailSentStatusColor("dark-green");
+        setEmailIsPopUpVisible(true);
+        closePopUp();
+      })
+      .finally(() => {
+        // Stop the loader after the process is complete
+        setLoading(false);
+      });
 
-    }, 5000);
+    // const timer = setTimeout(() => {
+    //   const success = 1;
+
+    //   if(success == 0){
+    //     setmailSentMsg("Email failed to sent..");
+    //     setemailSentStatusColor("dark-green")
+    //     setEmailIsPopUpVisible(true);
+    //   }
+    //   else{
+    //     setmailSentMsg("Email successfully sent..");
+    //     setemailSentStatusColor("red-700")
+    //     setEmailIsPopUpVisible(true);
+    //   }
+    //   setLoading(false);
+
+    // }, 5000);
 
      
   }
