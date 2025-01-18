@@ -9,13 +9,16 @@ import { SlSocialYoutube } from "react-icons/sl";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook, FaTwitter, FaYoutube, FaInstagram, FaUser, FaBars, FaTimes } from 'react-icons/fa';
 import { Link as RouterLink, useNavigate } from 'react-router-dom'; // Renamed to RouterLink
-
+import { useTranslation } from "react-i18next";
 export default function Footer(){
+    const {t} = useTranslation();
+
+
     return(
         <>
             <div className="rowdies flex flex-col lg:flex justify-center items-center pb-5">
                 <div className="">
-                   <h1 className="font-normal text-xl"> © 2025 VOGUE VISION VENTURES</h1>
+                   <h1 className="font-normal text-xl"> © {t("title")}</h1>
                 </div>
 
                 <div className="lg:mt-5 mt-3">

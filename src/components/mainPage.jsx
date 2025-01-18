@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 import FixCost from "./fixCost";
 import LanguageSelector from "./langSelector"
 import { useTranslation } from 'react-i18next';
+import Inventory from "./inventory";
 
 
 export default function MainPage() {
@@ -46,6 +47,9 @@ export default function MainPage() {
         </div>
         <div className="mt-20">
           <Capex />
+        </div>
+        <div className="mt-20">
+          <Inventory />
         </div>
         <div className="mt-32">
           <Opex />

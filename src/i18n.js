@@ -13,6 +13,8 @@ i18n
     resources: {
       en: {
         translation: {
+          title : "2025 VOGUE VISION VENTURES",
+
           header : {
             title : "VOGUE VISION VENTURES"
           },
@@ -174,6 +176,31 @@ i18n
               phone2 : "Phone number must be exactly 10 digits.",
               msg : "Message field cannot be empty."
             }
+          },
+
+          Inventory : {
+            title : "INVENTORY",
+            columnTitle : {
+              col_1 : "Details",
+              col_2 : "Qty",
+              col_3 : "MRP",
+              col_4 : "APP",
+              col_5 : "Retailer~Margin",
+              col_6 : "Purchase Value",
+              col_7 : "Resale Value"
+            },
+            inventoryData : [
+              { "details": "Shirts", "qty": "800", "MRP": "499", "APP": "375", "retailerMargin": "25%", "commissionOnSale": "3,00,000", "saleValue": "4,00,000" },
+              { "details": "Premium Shirts", "qty": "200", "MRP": "599", "APP": "450", "retailerMargin": "25%", "commissionOnSale": "90,000", "saleValue": "1,20,000" },
+              { "details": "T-Shirt", "qty": "500", "MRP": "399", "APP": "300", "retailerMargin": "25%", "commissionOnSale": "1,50,000", "saleValue": "2,00,000" },
+              { "details": "Premium T-Shirt", "qty": "100", "MRP": "599","APP": "450", "retailerMargin": "25%", "commissionOnSale": "45,000", "saleValue": "60,000" },
+              { "details": "Jeans", "qty": "400", "MRP": "999", "APP": "750", "retailerMargin": "25%", "commissionOnSale": "3,00,000", "saleValue": "4,00,000" },
+              { "details": "Formal Pants", "qty": "200", "MRP": "699", "APP": "525", "retailerMargin": "25%", "commissionOnSale": "1,05,000", "saleValue": "1,40,000" },
+              { "details": "Kurtis", "qty": "200", "MRP": "799", "APP": "600","retailerMargin": "25%", "commissionOnSale": "1,20,000", "saleValue": "1,60,000" },
+              { "details": "Sport Jackets", "qty": "200", "MRP": "699", "APP": "525","retailerMargin": "25%", "commissionOnSale": "1,05,000", "saleValue": "1,40,000" },
+              { "details": "Sportwear", "qty": "280", "ASP": "399", "APP": "300","retailerMargin": "25%", "commissionOnSale": "84,000", "saleValue": "1,12,000" }  
+            ],
+            warning: "* All values here are representation of approximate values"
           }
         },
       },
@@ -186,6 +213,7 @@ i18n
 
       mr: {
         translation: {
+          title : "२०२५ व्होग व्हिजन व्हेंचर्स",
           header : {
             title : "व्होग व्हिजन व्हेंचर्स"
           },
@@ -350,9 +378,31 @@ i18n
               phone2 : "फोन नंबर मस्ट बी 10 डिजिट",
               msg : "म्येसेज फील्ड कॅन नोट बी इम्प्टी"
             }
+          },
+          Inventory : {
+            title: "इन्व्हेंटरी",
+            columnTitle: {
+              col_1: "डिटेल्स",
+              col_2: "क्वांटिटी",
+              col_3: "एमआरपी",
+              col_4: "एपीपी",
+              col_5: "रिटेलर~मार्जिन",
+              col_6: "कमिशन ऑन सेल",
+              col_7: "रिसेल व्हॅल्यू"
+            },
+            inventoryData: [
+              { details: "शर्ट्स", qty: "800", MRP: "499", APP: "375", retailerMargin: "25%", commissionOnSale: "3,00,000", saleValue: "4,00,000" },
+              { details: "प्रीमियम शर्ट्स", qty: "200", MRP: "599", APP: "450", retailerMargin: "25%", commissionOnSale: "90,000", saleValue: "1,20,000" },
+              { details: "टी-शर्ट", qty: "500", MRP: "399", APP: "300", retailerMargin: "25%", commissionOnSale: "1,50,000", saleValue: "2,00,000" },
+              { details: "प्रीमियम टी-शर्ट", qty: "100", MRP: "599", APP: "450", retailerMargin: "25%", commissionOnSale: "45,000", saleValue: "60,000" },
+              { details: "जीन्स", qty: "400", MRP: "999", APP: "750", retailerMargin: "25%", commissionOnSale: "3,00,000", saleValue: "4,00,000" },
+              { details: "फॉर्मल पॅंट्स", qty: "200", MRP: "699", APP: "525", retailerMargin: "25%", commissionOnSale: "1,05,000", saleValue: "1,40,000" },
+              { details: "कुर्ती", qty: "200", MRP: "799", APP: "600", retailerMargin: "25%", commissionOnSale: "1,20,000", saleValue: "1,60,000" },
+              { details: "स्पोर्ट जॅकेट्स", qty: "200", MRP: "699", APP: "525", retailerMargin: "25%", commissionOnSale: "1,05,000", saleValue: "1,40,000" },
+              { details: "स्पोर्टवेअर", qty: "280", MRP: "399", APP: "300", retailerMargin: "25%", commissionOnSale: "84,000", saleValue: "1,12,000" }
+            ],
+            warning: "* आल व्हॅल्यूज हिअर आर रेप्रेझेंटेशन ऑफ अ‍ॅप्रॉक्सिमेट व्हॅल्यूज"
           }
-
-
         },
       },
     },
