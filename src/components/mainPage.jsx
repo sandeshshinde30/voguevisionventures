@@ -30,7 +30,8 @@ export default function MainPage() {
 
         <div>
           <h1 className="lg:hidden rowdies2 text-[24px] tracking-normal text-center mt-20 text-dark-green">
-            VOGUE VISION VENTURES <span><br /></span>FRANCHISE PLAN
+            {/* VOGUE VISION VENTURES <span><br /></span>FRANCHISE PLAN */}
+            {t("mainPage.title")}
           </h1>
           <h1 className="hidden lg:block rowdies2 text-[30px] tracking-normal text-center mt-20 text-dark-green">
             {/* VOGUE VISION VENTURES FRANCHISE PLAN */}

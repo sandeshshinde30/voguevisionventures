@@ -50,7 +50,7 @@ export default function Header() {
          
         <div className="flex flex-col">
        
-         <div>
+         <div className="hidden lg:block">
           <LanguageSelector/>
          </div>
          </div>
