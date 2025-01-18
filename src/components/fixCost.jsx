@@ -1,11 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function FixCost(){
+    const {t} = useTranslation()
+    const fixedCostData = t("fixCost.fixedCostData");
 
-    const fixedCostData = [
-        { details: "Software Licence & Franchise Fee", MRP: "2,49,999", offerPrice : "99,999" , limitedOffer : "(Limited time offer)" },
-        { details: "Company profit commission security deposit", MRP: "3,96,000" , offerPrice : "1,99,998" , limitedOffer : ""},
-      ];
+    const columTitle = t("fixCost.columnTitle")
     
       const totalMRP = fixedCostData.reduce(
         (acc, item) => acc + parseInt(item.MRP.replace(/,/g, "")),
@@ -21,15 +21,15 @@ export default function FixCost(){
         <>
         <div>
         <div>
-          <h1 className="rowdies2 lg:text-2xl text-xl text-center">FIXED COST</h1>
+          <h1 className="rowdies2 lg:text-2xl text-xl text-center">{t("fixCost.title")}</h1>
         </div>
         <div className="flex w-full h-full items-center justify-center">
           <table className="mt-8 lg:w-3/5 w-[85%] bg-white shadow-xl tracking-wider">
             <thead className="bg-lighter-green text-md">
               <tr>
-                <th className="border border-gray-300 px-4 py-3">Details</th>
-                <th className="border border-gray-300 px-4 py-3">Actual Amount</th>
-                <th className="border border-gray-300 px-4 text-dark-green py-3">Company Offered Amount</th>
+                <th className="border border-gray-300 px-4 py-3">{columTitle.one}</th>
+                <th className="border border-gray-300 px-4 py-3">{columTitle.two}</th>
+                <th className="border border-gray-300 px-4 text-dark-green py-3">{columTitle.three}</th>
 
               </tr>
             </thead>
@@ -43,7 +43,7 @@ export default function FixCost(){
                 </tr>
               ))}
               <tr className="bg-green-50">
-                <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total</td>
+                <td className="p-2 font-bold border border-gray-300 px-4 py-3">{columTitle.four}</td>
                 <td className="p-2 text-center font-semibold border border-gray-300 px-4 text-red-900 py-3">{totalMRP}</td>
                 <td className="p-2 text-center border border-gray-300 text-dark-green font-extrabold px-4 py-3">{totalOfferPrice}</td>
               </tr>

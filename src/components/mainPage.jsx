@@ -23,19 +23,18 @@ export default function MainPage() {
 
   
 
-
   return (
     <>
       <div className="bg-background-green min-h-screen pb-20">
         <Header />
-        {/* <LanguageSelector/> */}
+
         <div>
           <h1 className="lg:hidden rowdies2 text-[24px] tracking-normal text-center mt-20 text-dark-green">
             VOGUE VISION VENTURES <span><br /></span>FRANCHISE PLAN
           </h1>
           <h1 className="hidden lg:block rowdies2 text-[30px] tracking-normal text-center mt-20 text-dark-green">
-            VOGUE VISION VENTURES FRANCHISE PLAN
-            {/* {t("title")} */}
+            {/* VOGUE VISION VENTURES FRANCHISE PLAN */}
+            {t("mainPage.title")}
           </h1>
         </div>
         <div className="mt-20">
@@ -58,7 +57,7 @@ export default function MainPage() {
           onClick={handleClick}
           className="fixed bottom-5 right-5 font-bold bg-darker-green text-white p-4 rounded-full shadow-lg hover:bg-dark-green"
         >
-          Contact Us
+          {t("contactUs")}
         </button>
 
         

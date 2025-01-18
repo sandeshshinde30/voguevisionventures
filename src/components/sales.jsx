@@ -1,65 +1,9 @@
 import React from "react";
 import "../css/header.css";
-
+import { useTranslation } from "react-i18next";
 export default function Sales() {
-  const salesData = [
-    {
-      details: "Shirts",
-      avgSalesQty: "3,999",
-      ASP: "499",
-      retailerMargin: "67%",
-      commissionOnSale: "3,35,000",
-      saleValue: "19,95,500",
-    },
-    {
-      details: "T-Shirt",
-      avgSalesQty: "3,000",
-      ASP: "399",
-      retailerMargin: "67%",
-      commissionOnSale: "2,00,000",
-      saleValue: "11,97,000",
-    },
-    {
-      details: "Jeans",
-      avgSalesQty: "1,000",
-      ASP: "999",
-      retailerMargin: "67%",
-      commissionOnSale: "1,65,000",
-      saleValue: "9,99,000",
-    },
-    {
-      details: "Formal Pants",
-      avgSalesQty: "1,150",
-      ASP: "699",
-      retailerMargin: "67%",
-      commissionOnSale: "1,35,000",
-      saleValue: "8,03,850",
-    },
-    {
-      details: "Kurtis",
-      avgSalesQty: "850",
-      ASP: "599",
-      retailerMargin: "67%",
-      commissionOnSale: "85,000",
-      saleValue: "5,09,150",
-    },
-    {
-      details: "Sport Jackets",
-      avgSalesQty: "500",
-      ASP: "599",
-      retailerMargin: "67%",
-      commissionOnSale: "50,000",
-      saleValue: "2,99,500",
-    },
-    {
-      details: "Sportwear",
-      avgSalesQty: "490",
-      ASP: "399",
-      retailerMargin: "67%",
-      commissionOnSale: "30,000",
-      saleValue: "1,96,000",
-    },
-  ];
+  const {t} = useTranslation();
+  const salesData = t("sales.salesData")
 
   const totalCommissionOnSale = salesData
     .reduce(
@@ -79,7 +23,7 @@ export default function Sales() {
     <>
       <div>
         <div>
-          <h1 className="rowdies2 lg:text-2xl text-xl text-center">SALES</h1>
+          <h1 className="rowdies2 lg:text-2xl text-xl text-center">{t("sales.title")}</h1>
         </div>
         <div className="flex w-full h-full items-center justify-center">
           {/* Add horizontal scrolling */}
@@ -87,12 +31,12 @@ export default function Sales() {
             <table className="mt-8 w-full  bg-white  tracking-wider">
               <thead className="bg-lighter-green text-md">
                 <tr>
-                  <th className="border border-gray-300 px-4 py-3">Details</th>
-                  <th className="border border-gray-300 px-4 py-3">Avg Sales Qty</th>
-                  <th className="border border-gray-300 px-4 py-3">ASP</th>
-                  <th className="border border-gray-300 px-4 py-3">Retailer~Margin </th>
-                  <th className="border border-gray-300 px-4 py-3">Commission on profit</th>
-                  <th className="border border-gray-300 px-4 py-3">Sale value</th>
+                  <th className="border border-gray-300 px-4 py-3">{t("sales.columnTitle.one")}</th>
+                  <th className="border border-gray-300 px-4 py-3">{t("sales.columnTitle.two")}</th>
+                  <th className="border border-gray-300 px-4 py-3">{t("sales.columnTitle.three")}</th>
+                  <th className="border border-gray-300 px-4 py-3">{t("sales.columnTitle.four")}</th>
+                  <th className="border border-gray-300 px-4 py-3">{t("sales.columnTitle.five")}</th>
+                  <th className="border border-gray-300 px-4 py-3">{t("sales.columnTitle.six")}</th>
                 </tr>
               </thead>
               <tbody className="text-sm">
@@ -107,9 +51,9 @@ export default function Sales() {
                   </tr>
                 ))}
                 <tr className="bg-green-50">
-                  <td colSpan={3} className="p-2 font-bold border border-gray-300 px-4 py-3">* All values here are representation of approximate values</td>
+                  <td colSpan={3} className="p-2 font-bold border border-gray-300 px-4 py-3">{t("sales.warning")}</td>
                  
-                  <td className="p-2 font-bold border border-gray-300 px-4 py-3">Total</td>
+                  <td className="p-2 font-bold border border-gray-300 px-4 py-3">{t("total")}</td>
                   <td className="p-2 text-center font-bold border border-gray-300 px-4 py-3">{totalCommissionOnSale}</td>
                   <td className="p-2 text-center font-bold border border-gray-300 px-4 py-3">{totalSaleValue}</td>
                 </tr>
