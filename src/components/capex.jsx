@@ -26,7 +26,7 @@ export default function Capex() {
           <table className="mt-8 lg:w-3/5 w-[85%] bg-white shadow-xl tracking-wider">
             <thead className="bg-lighter-green text-md">
               <tr>
-                <th className="border border-gray-300 px-4 py-3">{t("capitalCost.columnTitle.one")}</th>
+                <th colSpan={2} className="border border-gray-300 px-4 py-3">{t("capitalCost.columnTitle.one")}</th>
                 <th className="border border-gray-300 px-4 py-3">{t("capitalCost.columnTitle.two")}</th>
                 <th className="border border-gray-300 px-4 text-dark-green py-3">
                 {t("capitalCost.columnTitle.three")}
@@ -36,7 +36,7 @@ export default function Capex() {
             <tbody className="text-sm">
               {capexData.map((item, index) => (
                 <tr key={index}>
-                  <td className="p-2 border border-gray-300 px-4 py-3"><span className="font-bold">{item.heading} :</span>{item.content}</td>
+                  <td colSpan={2} className="p-2 border border-gray-300 px-4 py-3"><span className="font-bold">{item.heading} :</span>{item.content}</td>
                   <td className="p-2 border text-center text-red-800 border-gray-300 px-4 py-3">{item.MRP}</td>
                   <td className="p-2 border text-center text-green-800 font-bold border-gray-300 px-4 py-3">
                     {item.offerPrice}
@@ -44,7 +44,8 @@ export default function Capex() {
                 </tr>
               ))}
               <tr className="bg-green-50">
-                <td className="p-2 font-bold border border-gray-300 px-4 py-3">{t("total")}</td>
+                
+                <td colSpan={2} className="p-2 font-bold border border-gray-300 px-4 py-3">{t("total")}</td>
                 <td className="p-2 font-semibold border text-center border-gray-300 px-4 text-red-900 py-3">
                   {totalMRP}
                 </td>

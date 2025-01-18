@@ -6,6 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "./langSelector";
 
 export default function ContactUs() {
   const navigate = useNavigate();
@@ -160,7 +161,12 @@ export default function ContactUs() {
           <Header />
         </div>
 
+        
+
         <div className="pt-20">
+        <div className="lg:hidden flex justify-end mr-10 mt-3">
+          <LanguageSelector/>
+        </div>
           <h1 className="rowdies font-thin text-center text-3xl mt-16 text-dark-green">
             {t("contactUsPage.title")}
           </h1>

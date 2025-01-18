@@ -27,9 +27,12 @@ export default function MainPage() {
     <>
       <div className="bg-background-green min-h-screen pb-20">
         <Header />
+        <div className="lg:hidden flex justify-end mr-10 mt-3">
+          <LanguageSelector/>
+        </div>
 
         <div>
-          <h1 className="lg:hidden rowdies2 text-[24px] tracking-normal text-center mt-20 text-dark-green">
+          <h1 className="lg:hidden rowdies2 text-[24px] tracking-normal text-center mt-12 text-dark-green">
             {/* VOGUE VISION VENTURES <span><br /></span>FRANCHISE PLAN */}
             {t("mainPage.title")}
           </h1>
