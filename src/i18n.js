@@ -35,7 +35,7 @@ i18n
             },
             fixedCostData : [
               { details: "Software Licence & Franchise Fee", MRP: "2,49,999", offerPrice : "99,999" , limitedOffer : "(Limited time offer)" },
-              { details: "Company profit commission security deposit", MRP: "3,96,000" , offerPrice : "1,99,998" , limitedOffer : ""},
+              { details: "Company profit commission security deposit", MRP: "3,99,996" , offerPrice : "1,99,998" , limitedOffer : ""},
             ]
           },
 
@@ -61,13 +61,13 @@ i18n
                   },
                   {
                     "heading": "Electronic",
-                    "content": "(Customized Light Structure, Fan, AC, Vacuum Cleaner, LED Screen, Tablet, Computer, Music System, Inverter etc.)",
+                    "content": "(Customized Light Structure, Fan-2, AC 2 ton, Vacuum Cleaner, LED Screen, Tablet, Computer, Music System, Inverter etc.)",
                     "MRP": "2,50,000",
                     "offerPrice": "1,75,000"
                   },
                   {
                     "heading": "Customization Equipment",
-                    "content": "(Heat Press Machine, Mannequins-4, Hangers-200 & Other Equipments etc.)",
+                    "content": "(Heat Press Machine, Mannequins-4, Hangers-300 & Other Equipments etc.)",
                     "MRP": "75,000",
                     "offerPrice": "50,000"
                   },
@@ -93,7 +93,7 @@ i18n
               two : "Amount",
             },
             opexData : [
-              { operatingExpenses: "Rent", price: "15,000"},
+              { operatingExpenses: "Rent (400 sq ft)", price: "15,000"},
               { operatingExpenses: "Electricity", price: "6,300"},
               { operatingExpenses: "Internet", price: "700"},
             ],
@@ -135,13 +135,46 @@ i18n
             summaryData : [
               { label: "Fix Cost", value: "2,99,997" },
               { label: "Capital Cost", value: "8,00,000" },
-              { label: "Inventory", value: "13,00,000" },
+              { label: "Inventory", value: "12,99,000" },
               { label: "Profit Commission", value: "67%" },
               { label: "ROI on Investment", value: "33%" },
               { label: "Yearly Earning Potential", value: "5,40,000" },
             ]
+          },
+
+          contactUsPage : {
+            title : "CONTACT US",
+            formTitles : {
+              _1 : "Name",
+              _2 : "Email",
+              _3 : "Phone",
+              _4 : "Message",
+              _5 : "Send Email"
+            },
+            backBtn : "Back",
+            confirmationPopUp : {
+              title : "Confirmation",
+              content : "Are you sure you want to submit?",
+              cancel : "Cancel",
+              submit : "Submit"
+            },
+            donePopUp : {
+              title : "Status",
+              btn : "Done"
+            },
+            loader : {
+              title : "Loading...",
+              content : "Sending email..."
+            },
+            formValidation : {
+              name : "Name field cannot be empty.",
+              email1 : "Email field cannot be empty.",
+              email2 : "Please enter a valid email address.",
+              phone1 : "Phone field cannot be empty.",
+              phone2 : "Phone number must be exactly 10 digits.",
+              msg : "Message field cannot be empty."
+            }
           }
-         
         },
       },
 
@@ -177,7 +210,7 @@ i18n
             },
             fixedCostData : [
               { details: "सॉफ़्टवेअर लायसन्स आणि फ्रँचायझ फी", MRP: "2,49,999", offerPrice : "99,999" , limitedOffer : "(लिमिटेड टाइम ऑफर)" },
-              { details: "कंपनी प्रॉफिट कमिशन सिक्योरिटी डिपॉझिट", MRP: "3,96,000" , offerPrice : "1,99,998" , limitedOffer : ""},
+              { details: "कंपनी प्रॉफिट कमिशन सिक्योरिटी डिपॉझिट", MRP: "3,99,996" , offerPrice : "1,99,998" , limitedOffer : ""},
             ]
           },
 
@@ -204,13 +237,13 @@ i18n
                 },
                 {
                   "heading": "इलेक्ट्रॉनिक",
-                  "content": "(कस्टमाइज्ड लाईट स्ट्रक्चर, फॅन, एसी, व्हॅक्यूम क्लिनर, एलईडी स्क्रीन, टॅबलेट, संगणक, म्युझिक सिस्टम, इन्व्हर्टर इत्यादी)",
+                  "content": "(कस्टमाइज्ड लाईट स्ट्रक्चर, फॅन- 2, एसी 2 टन, व्हॅक्यूम क्लिनर, एलईडी स्क्रीन, टॅबलेट, संगणक, म्युझिक सिस्टम, इन्व्हर्टर इत्यादी)",
                   "MRP": "2,50,000",
                   "offerPrice": "1,75,000"
                 },
                 {
                   "heading": "कस्टमायझेशन उपकरण",
-                  "content": "(हीट प्रेस मशीन, मॅनक्विन्स-4, हॅंगर्स-200 आणि इतर उपकरणे इत्यादी)",
+                  "content": "(हीट प्रेस मशीन, मॅनक्विन्स-4, हॅंगर्स-300 आणि इतर उपकरणे इत्यादी)",
                   "MRP": "75,000",
                   "offerPrice": "50,000"
                 },
@@ -236,7 +269,7 @@ i18n
               two : "अमाउंट",
             },
             opexData : [
-              { operatingExpenses: "रेण्ट", price: "15,000"},
+              { operatingExpenses: "रेण्ट (400 स्क्वेअर फीट)", price: "15,000"},
               { operatingExpenses: "इलेक्ट्रिसिटी", price: "6,300"},
               { operatingExpenses: "इंटरनेट", price: "700"},
             ],
@@ -278,11 +311,45 @@ i18n
             summaryData : [
               { label: "फिक्स्ट कॉस्ट", value: "2,99,997" },
               { label: "कॅपिटल कॉस्ट", value: "8,00,000" },
-              { label: "इंव्हेंटरी", value: "13,00,000" },
+              { label: "इंव्हेंटरी", value: "12,99,000" },
               { label: "प्रॉफिट कमीशन", value: "67%" },
               { label: "रॉय ऑन इन्व्हेस्टमेंट", value: "33%" },
               { label: "वार्षिक कमाई क्षमता", value: "5,40,000" },
             ]
+          },
+
+          contactUsPage : {
+            title : "कॉण्टॅक्ट अस",
+            formTitles : {
+              _1 : "नेम",
+              _2 : "ईमेल",
+              _3 : "फोन",
+              _4 : "मेस्सेज",
+              _5 : "सेंड ईमेल"
+            },
+            backBtn : "बॅक",
+            confirmationPopUp : {
+              title : "कॉन्फर्मेशन",
+              content : "आहेत का तुम्ही सबमिट करू इच्छिता?",
+              cancel : "कॅन्सल",
+              submit : "सबमिट"
+            },
+            donePopUp : {
+              title : "स्टेटस",
+              btn : "डन"
+            },
+            loader : {
+              title : "लोडिंग...",
+              content : "सेंडिंग ईमेल..."
+            },
+            formValidation : {
+              name : "नेम फील्ड कॅन नोट बी एम्प्टी",
+              email1 : "इमैल फील्ड कॅन नोट बी एम्पटी",
+              email2 : "प्लिज एंटर व्यालिड ईमेल ॲड्रेस",
+              phone1 : "फोन फील्ड कॅन नोट बी इम्पटी",
+              phone2 : "फोन नंबर मस्ट बी 10 डिजिट",
+              msg : "म्येसेज फील्ड कॅन नोट बी इम्प्टी"
+            }
           }
 
 
