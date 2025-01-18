@@ -26,7 +26,7 @@ export default function Header() {
          </div>
          <div className="hidden sm:block lg:flex lg:row">
          <div>
-             <div className="flex items-center tracking-wide border-r-2 border-gray-400 px-[5px]">
+         <div className="flex items-center tracking-wide border-r-2 border-gray-400 px-[5px]">
                 <MdEmail size={20} className="text-dark-green"/>
                 <h2 className=" ml-1 text-[14px]">director@voguevisionventures.com</h2>
              </div>

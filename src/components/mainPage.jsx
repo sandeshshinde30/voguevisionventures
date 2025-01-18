@@ -25,7 +25,7 @@ export default function MainPage() {
 
   return (
     <>
-      <div className="bg-background-green min-h-screen pb-20">
+      <div className="bg-background-green min-h-screen pb-10">
         <Header />
         <div className="lg:hidden flex justify-end mr-10 mt-3">
           <LanguageSelector/>
@@ -55,6 +55,10 @@ export default function MainPage() {
         </div>
         <div className="mt-32">
           <StoreROI />
+        </div>
+
+        <div className="lg:mt-16 mt-10">
+          <Footer/>
         </div>
        
         <button

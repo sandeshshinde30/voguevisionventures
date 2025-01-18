@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./langSelector";
+import Footer from "./footer";
 
 export default function ContactUs() {
   const navigate = useNavigate();
@@ -167,9 +168,26 @@ export default function ContactUs() {
         <div className="lg:hidden flex justify-end mr-10 mt-3">
           <LanguageSelector/>
         </div>
+
+        
           <h1 className="rowdies font-thin text-center text-3xl mt-16 text-dark-green">
             {t("contactUsPage.title")}
           </h1>
+
+          <div className="lg:hidden flex flex-col justify-center items-center mt-3 mb-5">
+      
+         <div className="flex items-center tracking-wide  px-[5px]">
+                <MdEmail size={20} className="text-dark-green"/>
+                <h2 className=" ml-1 text-[14px]">director@voguevisionventures.com</h2>
+             </div>
+         
+          <div className="ml-[5px]">
+             <div className="flex items-center tracking-wide  px-[5px]">
+                <FaPhoneAlt size={15} className="text-dark-green"/>
+                <h2 className=" ml-2 text-[14px]">911 955 88 55</h2>
+             </div>
+          </div>
+          </div>
 
           {/* Validation Message Container */}
           {validMsg && (
@@ -288,6 +306,10 @@ export default function ContactUs() {
               </button>
             </form>
           </div>
+        <div className="mt-5">
+        <Footer />
+
+        </div>
         </div>
       </div>
     </>
