@@ -126,7 +126,7 @@ i18n
               { details: "Formal Pants", avgSalesQty: "1,150", ASP: "699", retailerMargin: "67%", commissionOnSale: "1,35,000", saleValue: "8,03,850" },
               { details: "Kurtis", avgSalesQty: "850", ASP: "599", retailerMargin: "67%", commissionOnSale: "85,000", saleValue: "5,09,150" },
               { details: "Sport Jackets", avgSalesQty: "500", ASP: "599", retailerMargin: "67%", commissionOnSale: "50,000", saleValue: "2,99,500" },
-              { details: "Sportwear", avgSalesQty: "490", ASP: "399", retailerMargin: "67%", commissionOnSale: "30,000", saleValue: "1,96,000" }
+              { details: "Sportwear", avgSalesQty: "525", ASP: "399", retailerMargin: "67%", commissionOnSale: "35,000", saleValue: "2,10,000" }
             ],
             warning : "* All values here are representation of approximate values"
           },
@@ -140,7 +140,7 @@ i18n
               { label: "Inventory", value: "12,99,000" },
               { label: "Profit Commission", value: "67%" },
               { label: "ROI on Investment", value: "33%" },
-              { label: "Yearly Earning Potential", value: "5,40,000" },
+              { label: "Yearly Earning Potential", value: "6,75,000(Active) / 4,95,000(Passive)" },
             ]
           },
 
@@ -198,7 +198,7 @@ i18n
               { "details": "Formal Pants", "qty": "200", "MRP": "699", "APP": "525", "retailerMargin": "25%", "commissionOnSale": "1,05,000", "saleValue": "1,40,000" },
               { "details": "Kurtis", "qty": "200", "MRP": "799", "APP": "600","retailerMargin": "25%", "commissionOnSale": "1,20,000", "saleValue": "1,60,000" },
               { "details": "Sport Jackets", "qty": "200", "MRP": "699", "APP": "525","retailerMargin": "25%", "commissionOnSale": "1,05,000", "saleValue": "1,40,000" },
-              { "details": "Sportwear", "qty": "280", "ASP": "399", "APP": "300","retailerMargin": "25%", "commissionOnSale": "84,000", "saleValue": "1,12,000" }  
+              { "details": "Sportwear", "qty": "280", "MRP": "399", "APP": "300","retailerMargin": "25%", "commissionOnSale": "84,000", "saleValue": "1,12,000" }  
             ],
             warning: "* All values here are representation of approximate values"
           }
@@ -328,7 +328,7 @@ i18n
               { details: "फॉर्मल पॅंट्स", avgSalesQty: "1,150", ASP: "699", retailerMargin: "67%", commissionOnSale: "1,35,000", saleValue: "8,03,850" },
               { details: "कुर्ती", avgSalesQty: "850", ASP: "599", retailerMargin: "67%", commissionOnSale: "85,000", saleValue: "5,09,150" },
               { details: "स्पोर्ट जॅकेट्स", avgSalesQty: "500", ASP: "599", retailerMargin: "67%", commissionOnSale: "50,000", saleValue: "2,99,500" },
-              { details: "स्पोर्टविअर", avgSalesQty: "490", ASP: "399", retailerMargin: "67%", commissionOnSale: "30,000", saleValue: "1,96,000" }
+              { details: "स्पोर्टविअर", avgSalesQty: "525", ASP: "399", retailerMargin: "67%", commissionOnSale: "35,000", saleValue: "2,10,000" }
             ],
             warning : "* आल व्हॅल्यूज हिअर आर रेप्रेझेंटेशन ऑफ अ‍ॅप्रॉक्सिमेट व्हॅल्यूज"
           },
@@ -342,7 +342,7 @@ i18n
               { label: "इंव्हेंटरी", value: "12,99,000" },
               { label: "प्रॉफिट कमीशन", value: "67%" },
               { label: "रॉय ऑन इन्व्हेस्टमेंट", value: "33%" },
-              { label: "वार्षिक कमाई क्षमता", value: "5,40,000" },
+              { label: "वार्षिक कमाई क्षमता", value: "6,75,000(ऍक्टिव) / 4,95,000(पॅसिव)" },
             ]
           },
 
