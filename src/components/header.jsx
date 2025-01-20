@@ -28,7 +28,7 @@ export default function Header() {
          <div>
          <div className="flex items-center tracking-wide border-r-2 border-gray-400 px-[5px]">
                 <MdEmail  className="text-dark-green w-5 h-5"/>
-                <h2 className=" ml-1 lg:text-[14px] text-[10px] md:text-[10px]">director@voguevisionventures.com</h2>
+                <h2 className=" ml-1 lg:text-[14px] text-[10px] md:text-[10px]">info@voguevisionventures.com</h2>
              </div>
           </div>
           <div className="ml-[5px]">
